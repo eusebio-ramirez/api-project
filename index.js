@@ -7,10 +7,12 @@ app.use(express.json());
 
 
 const menusRoutes = require('./routes/menu');
+const agendaRoutes = require('./routes/agenda');
 
 
 
 app.use('/api/menu', menusRoutes);
+app.use('/api/agenda', agendaRoutes);
 
 
 // Iniciar el servidor
