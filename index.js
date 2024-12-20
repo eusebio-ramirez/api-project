@@ -9,12 +9,14 @@ const menusRoutes = require("./routes/menu");
 const agendaRoutes = require("./routes/agenda");
 const rubrosRoutes = require("./routes/rubros");
 const serviciosRoutes = require("./routes/servicios");
+const programasRoutes = require("./routes/programas");
 
 
 app.use("/api/menu", menusRoutes);
 app.use("/api/agenda", agendaRoutes);
 app.use("/api/rubros", rubrosRoutes);
 app.use("/api/servicios", serviciosRoutes);
+app.use("/api/programas", programasRoutes);
 
 // Iniciar el servidor
 const PORT = 3000;
